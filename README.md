@@ -55,6 +55,11 @@ intrusion detection, access using RFID, and license plate detection.
 <br>
 
 <h3>Door Access</h3>
+- Using the RFID reader to scan the RFID Tag and compare it to te databse of authenticated Tags in Firebase
+<img src="https://imgur.com/bgneKHX.png"  height="80%" width="80%" alt="temperature"/> 
+<br>
+
+<h3>Garage Access</h3>
 - The YOLO (You Only Look Once) algorithm is used for Automatic License Plate Detection. YOLO is a real-time object detection system that processes images in a single pass, dividing the image into a grid. Each grid cell predicts bounding boxes for potential objects and their corresponding confidence scores.<br>
 - For License Plate Recognition (ANPR/ALPR), the steps are:
     1-Image Input: Capture an image or video frame containing a vehicle.<br>
@@ -63,6 +68,4 @@ intrusion detection, access using RFID, and license plate detection.
     4-OCR (Optical Character Recognition): An OCR tool like Tesseract is used to recognize the characters and convert them into text.<br><br>
 
 - To implement this, the model is trained using PyTorch, leveraging datasets of annotated license plate images. Once trained, OpenCV is used to process images, detect the license plates, and the OCR extracts the text. Post-processing enhances accuracy, making it suitable for real-world applications like toll gate operations or vehicle tracking.<br>
-<img src="https://imgur.com/bgneKHX.png"  height="80%" width="80%" alt="temperature"/> 
-<br>
 
